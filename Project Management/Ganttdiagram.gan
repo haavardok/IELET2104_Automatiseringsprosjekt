@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Gruppeprosjekt våren 2021" company="P2106 - Vennegjengen Supergrei" webLink="http://" view-date="2021-02-16" view-index="0" gantt-divider-location="470" resource-divider-location="300" version="3.0.3000" locale="no_NO_NY">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Navn" width="276" order="0"/>
+        <field id="tpd4" name="Startdato" width="37" order="1"/>
+        <field id="tpd5" name="Sluttdato" width="138" order="2"/>
+        <timeline>
+            <![CDATA[28,4,26,10,18,14,0,8,16,22,20,24]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#ffff00]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Navn" width="210" order="0"/>
+        <field id="1" name="Standardrolle" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Prosjektstart" color="#8cb6ce" meeting="true" start="2021-02-16" duration="0" complete="0" thirdDate="2021-02-25" thirdDate-constraint="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="28" name="Forprosjekt" color="#8cb6ce" meeting="false" start="2021-02-16" duration="13" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+            <task id="34" name="Bli kjent prosjektdokumenter fra kunde" color="#8cb6ce" meeting="false" start="2021-02-16" duration="4" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[	]]>
+                </notes>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Klargjøre spesifikasjonsspørsmål til prosjektmøte 1" color="#8cb6ce" meeting="false" start="2021-02-22" duration="3" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+                <depend id="78" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="78" name="Prosjektmøte 1 - Spesifikasjon" color="#8cb6ce" meeting="true" start="2021-02-25" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="59" name="Bli kjent med fysisk utstyr" color="#8cb6ce" meeting="false" start="2021-02-25" duration="1" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="57" name="Fordele arbeidsoppgaver" color="#8cb6ce" meeting="false" start="2021-02-26" duration="1" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+                <depend id="65" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="65" name="Skrive arbeidsnotat fra forprosjektet" color="#8cb6ce" meeting="false" start="2021-03-01" duration="4" complete="100" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="81" name="Forprosjekt - arbeidsnotat" color="#8cb6ce" meeting="true" start="2021-03-05" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="145" name="Kommunikasjonsoppsett" meeting="false" start="2021-03-03" duration="8" complete="40" expand="true">
+            <task id="147" name="01 Opprette kommunikasjon mellom PLS og brukergrensesnitt" color="#8cb6ce" meeting="false" start="2021-03-03" duration="8" complete="40" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="89" name="Brukergrensesnitt" color="#000000" meeting="false" start="2021-03-11" duration="12" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+            <task id="90" name="02 Programmering av SCADA for PC på kontrollrom" color="#8cb6ce" meeting="false" start="2021-03-11" duration="9" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+            <task id="181" name="03 Programmering av HMI for operatørpanel" color="#8cb6ce" meeting="false" start="2021-03-15" duration="10" complete="0" thirdDate="2021-02-24" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="4" name="Prosjektmøte 2 - Kommunikasjonsoppsett" color="#8cb6ce" meeting="true" start="2021-04-09" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="92" name="Funksjonsblokker" color="#000000" meeting="false" start="2021-03-15" duration="25" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+            <task id="98" name="04 Programmering og interntest av funksjonsblokker" color="#8cb6ce" meeting="false" start="2021-03-15" duration="17" complete="0" thirdDate="2021-03-16" thirdDate-constraint="0" expand="true"/>
+            <task id="118" name="11 Test og demonstrasjons av funksjonsblokker" color="#8cb6ce" meeting="false" start="2021-04-06" duration="4" complete="0" thirdDate="2021-03-16" thirdDate-constraint="0" expand="true"/>
+            <task id="124" name="12 Test, ferdigstilling og dokumentasjon av funksjonsblokker på kundens system" color="#8cb6ce" meeting="false" start="2021-04-09" duration="6" complete="0" thirdDate="2021-03-16" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="14" name="PID funksjonsblokk - testskjema" color="#8cb6ce" meeting="true" start="2021-04-09" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="PID funksjonsblokk - arbeidsnotat" color="#8cb6ce" meeting="true" start="2021-04-16" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="103" name="Feilhåndtering" color="#8cb6ce" meeting="false" start="2021-03-25" duration="14" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true">
+            <task id="142" name="05 Avdekke mulige feil som kan oppstå under drift" color="#8cb6ce" meeting="false" start="2021-03-25" duration="2" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+            <task id="144" name="06 Feilhåndtering og interntest av feilhåndtering" color="#8cb6ce" meeting="false" start="2021-04-05" duration="7" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="8" name="Prosjektmøte 3 - PID funksjonsblokk" color="#8cb6ce" meeting="true" start="2021-04-22" duration="0" complete="0" thirdDate="2021-02-26" thirdDate-constraint="0" expand="true"/>
+        <task id="93" name="Alarmsystem" meeting="false" start="2021-04-05" duration="10" complete="0" expand="true">
+            <task id="100" name="07 Implementere oversikt av alarmer på brukergrensesnitt" color="#8cb6ce" meeting="false" start="2021-04-05" duration="5" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+            <task id="102" name="08 Teste og feilsøke alarmsystem" color="#8cb6ce" meeting="false" start="2021-04-12" duration="5" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="104" name="Historikk og trender" meeting="false" start="2021-04-12" duration="7" complete="0" expand="true">
+            <task id="161" name="09 Programmering av historikk og trender" color="#8cb6ce" meeting="false" start="2021-04-12" duration="5" complete="0" thirdDate="2021-04-21" thirdDate-constraint="0" expand="true"/>
+            <task id="212" name="10 Programmere sanntidsvindu" color="#8cb6ce" meeting="false" start="2021-04-16" duration="3" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="105" name="Innstilling av regulator" meeting="false" start="2021-04-09" duration="12" complete="0" expand="true">
+            <task id="159" name="13 Forslag til parametere" color="#8cb6ce" meeting="false" start="2021-04-09" duration="2" complete="0" thirdDate="2021-04-21" thirdDate-constraint="0" expand="true"/>
+            <task id="227" name="14 Testing av teoretiske parametere" color="#8cb6ce" meeting="false" start="2021-04-12" duration="2" complete="0" thirdDate="2021-02-15" thirdDate-constraint="0" expand="true"/>
+            <task id="230" name="15 Etterjustering av parametere" color="#8cb6ce" meeting="false" start="2021-04-13" duration="4" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
+            <task id="232" name="16 Testing av etterjusterte parametere" color="#8cb6ce" meeting="false" start="2021-04-16" duration="7" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="10" name="Prosjektmøte 4 - Hovedprosjekt" color="#8cb6ce" meeting="true" start="2021-05-13" duration="0" complete="0" thirdDate="2021-02-26" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Hovedprosjekt - testskjema" color="#8cb6ce" meeting="true" start="2021-04-30" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Hovedprosjekt - demonstrasjon" color="#8cb6ce" meeting="true" start="2021-05-06" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="22" name="Hovedprosjekt - rapport" color="#8cb6ce" meeting="true" start="2021-05-07" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="Refleksjonsnotat" color="#8cb6ce" meeting="true" start="2021-05-14" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="Medstudentvurdering" color="#8cb6ce" meeting="true" start="2021-05-14" duration="0" complete="0" thirdDate="2021-02-11" thirdDate-constraint="0" expand="true"/>
+        <task id="134" name="Påskeferie" color="#ffff00" meeting="false" start="2021-03-29" duration="5" complete="0" thirdDate="2021-02-16" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

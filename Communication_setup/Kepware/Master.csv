@@ -1,0 +1,7 @@
+﻿Tag Name,Address,Data Type,Respect Data Type,Client Access,Scan Rate,Scaling,Raw Low,Raw High,Scaled Low,Scaled High,Scaled Data Type,Clamp Low,Clamp High,Eng Units,Description,Negate Value
+"knapp_0","M0020",Boolean,1,R/W,100,,,,,,,,,,"",
+"knapp_1","M0021",Boolean,1,R/W,100,,,,,,,,,,"",
+"lampe_0","M0100",Boolean,1,R/W,100,,,,,,,,,,"",
+"lampe_1","M0101",Boolean,1,R/W,100,,,,,,,,,,"",
+"slider","D0000020",Word,1,R/W,100,,,,,,,,,,"",
+"tank","D0000000",Word,1,R/W,100,,,,,,,,,,"",

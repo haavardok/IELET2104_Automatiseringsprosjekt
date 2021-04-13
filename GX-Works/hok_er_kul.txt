@@ -1,0 +1,28 @@
+Block 2: Kan ikkje en berre broke Input_Skalert_Samplingstid i staden for Input_Skalert_Samplingstid[0]?
+
+Block 4: I DEDIV: s2 = 2.55 for å få Input_Process til å bli 0-100 %, 2.5 gir 102 %
+
+Block 7: Same som i block 2: s2 = 2.55 visst den også er 8-bit. (Utgang er frå 0-255). Veit dette ikkje er så viktig, i og med på riggen er det en FX3N.
+
+Block 6: Kanksje adderaren skaper litt problem på Output_Total? Kanskje vi må sette Input 3, 4 og 5 = 0 berre for å ha ein verdi der?
+
+PID-blokka: 	Manglar ein t i "PID_DerivaorMode"
+
+		Usikker på om nominelt pådrag u0 skal vere med i PID_Gain_Total. Las noko om noko at den ikkje trengst når vi har med integralvirkning. Må sjekke ut dette.
+		Kanskje det er dette som gjer du må til ish 60 % før prosessverdien endrar seg? Kanskje integratoren må "overvinne" dei første 50 % først (dersom u0 = 50 feks)?
+
+		Uhm gjer denne: "IF PID_ManualModus THEN" noko i det heile? Visst PID_ManualModus er aktivert, sett PID_Gain_Tracking := PID_Manual_Value;
+		eller PID_Gain_Tracking := PID_Gain_Total;? Trur ikkje denne funksjonen gjer noko i det heile? Korleis skal if-en skilje mellom dei?
+
+		Siste statement er også overflødig vil eg tru? Begynner med "IF PID_Enable THEN" så køyrer mykje kode, og så kjem det til slutt:
+		  PID_Output := PID_Gain_Tracking;
+		ELSE 
+		  PID_Output:= PID_Gain_Tracking;
+		END_IF;
+		IF-en seier altså at: enten så er PID_Output := PID_Gain_Tracking; eller så er PID_Output := PID_Gain_Tracking; (altså det same).
+		Då vil vel PID_Output bli skrive kvart SCAN og ikkje kvar samplingstid?
+
+		Håvard Olai er tøff også.
+
+
+		

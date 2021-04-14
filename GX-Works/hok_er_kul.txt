@@ -23,6 +23,6 @@ PID-blokka: 	Manglar ein t i "PID_DerivaorMode"
 		Då vil vel PID_Output bli skrive kvart SCAN og ikkje kvar samplingstid?
 
 		Håvard Olai er tøff også.
-
+ eeeh nei
 
 		
